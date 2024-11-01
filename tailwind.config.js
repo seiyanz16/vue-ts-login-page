@@ -6,7 +6,7 @@ export default {
       colors: {
         light: {
           background: '#f1f5f9',  
-          card: '#f8fafc',
+          card: '#fff',
           text: '#1f2937',        
           primary: '#3b82f6',     
           secondary: '#9ca3af',   
