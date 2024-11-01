@@ -25,7 +25,7 @@
                   <fa :icon="showPassword ? 'eye-slash' : 'eye'" class="text-light-text dark:text-dark-text" />
                 </span>
               </button>
-              <ul v-if="showPasswordRequirements" class="mt-2 text-sm text-gray-500">
+              <ul v-if="showPasswordRequirements" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
                 <li v-for="(requirement, key) in passwordRequirements" :key="key"
                   :class="requirement.predicate ? 'hidden' : ''">
                   {{ requirement.name }}
@@ -66,7 +66,7 @@ export default defineComponent({
 
     // password requirements
     const passwordRequirements = computed(() => {
-      const password = form.value.password; // Akses password dari form
+      const password = form.value.password; 
 
       return [
         {
@@ -100,6 +100,7 @@ export default defineComponent({
       } else {
         console.log('Email:', form.value.email);
         console.log('Password:', form.value.password);
+        alert('Login successful!');
         
         showPasswordRequirements.value = false;
         form.value.email = '';
