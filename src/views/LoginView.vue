@@ -106,24 +106,4 @@ export default defineComponent({
 });
 </script>
 
-<style>
-html {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.bg-light-background,
-.bg-dark-background,
-.bg-light-card,
-.bg-dark-card,
-.text-light-text,
-.text-dark-text,
-.border-gray-300,
-.border-dark-secondary {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-input,
-button {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-</style>
+<style scoped></style>
